@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Drapeaux que je ne connais pas</title>
+    <link rel="stylesheet" href="/stylesheets/correction.css" />
+  </head>
+  <body>
+    <% if (!correction.reponseEstValide) { %>
+    <h1>Aïe, la réponse était</h1>
+    <% } else { %>
+    <h1>Bravo !</h1>
+    <% } %>
+    <img
+      src="/images/<%= correction.drapeau %>"
+      alt=""
+      style="border-color: <%= correction.reponseEstValide ? 'green' : 'red' %>;"
+    />
+    <h2 style="color: <%= correction.reponseEstValide ? 'green' : 'red' %>;"><%= correction.pays %></h2>
+    <a href="/play">CONTINUER</a>
+  </body>
+</html>

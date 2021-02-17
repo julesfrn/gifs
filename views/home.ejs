@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Drapeaux que je ne connais pas</title>
+    <link rel="stylesheet" href="/stylesheets/index.css" />
+    <style>
+      h1 {
+        text-align: center;
+        font-size: 100px;
+        margin: 0;
+        color: #fff;
+        z-index: 4;
+      }
+      h3 {
+        color: #fff;
+        z-index: 5;
+        font-size: 30px;
+        text-align: center;
+        max-width: 80%;
+      }
+      body {
+        margin: 0;
+        height: 100vh;
+        width: 100vw;
+        background-image: url('/images/1.webp');
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      }
+      .darkLayer {
+        background: #000;
+        opacity: .5;
+        width: 100vw;
+        height: 100vh;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 3;
+      }
+      a {
+        border: 0;
+        background: #fff;
+        width: 300px;
+        height: 100px;
+        z-index: 6;
+        font-size: 30px;
+        color: #000;
+        transition: .5s ease-in-out;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-weight: bold;
+        border-radius: 30px;
+      }
+      a:hover {
+        background: #000;
+        color: #fff;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="darkLayer"></div>
+    <h1>
+      Welcome to<br />
+      The GIF's Origin !
+    </h1>
+    <h3>A game where you have to find out wich TV show does the GIF comes from</h3>
+    <a class="learn-more" href="/play">Play the game</a>
+  </body>
+</html>
