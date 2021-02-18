@@ -23,6 +23,34 @@ const pays = [
     nom: 'Modern Family',
     flag: '6.webp',
   },
+  {
+    nom: 'South Park',
+    flag: '7.webp',
+  },
+  {
+    nom: 'Brooklyn 99',
+    flag: '8.webp',
+  },
+  {
+    nom: 'Archer',
+    flag: '9.webp',
+  },
+  {
+    nom: 'The Boys',
+    flag: '10.webp',
+  },
+  {
+    nom: 'Friends',
+    flag: '11.webp',
+  },
+  {
+    nom: 'Peaky Blinders',
+    flag: '12.webp',
+  },
+  {
+    nom: 'Game of Thrones',
+    flag: '13.gif',
+  },
 ]
 
 module.exports = pays

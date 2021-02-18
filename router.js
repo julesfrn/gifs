@@ -1,11 +1,20 @@
 var express = require('express')
-const { indexOf } = require('./pays')
 var router = express.Router()
 
 const pays = require('./pays')
 
+let paysPrecedent
+
+const genChiffreAleatoire = () => {
+  return Math.floor(Math.random() * pays.length)
+}
+
 const paysAleatoire = () => {
-  return pays[Math.floor(Math.random() * pays.length)]
+  let chiffreAleatoire = genChiffreAleatoire()
+  while (chiffreAleatoire === paysPrecedent) {
+    chiffreAleatoire = genChiffreAleatoire()
+  }
+  return pays[chiffreAleatoire]
 }
 
 const quatreDrapeauxAleatoires = () => {
